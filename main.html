@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="containerMain">
+        <form>
+            <fieldset>
+                <legend>Fórmulário de Clientes</legend>
+                <div class="boxInput">
+                    <input placeholder="Nome Completo..." type="text" name="nome" class="inputStyle" autocomplete="off" required/>
+                </div><!--boxInput-->
+
+                <div class="boxInput">
+                    <input placeholder="E-mail..." type="email" name="email" class="inputStyle" autocomplete="off" required/>
+                </div><!--boxInput-->
+
+                <div class="boxInput">
+                    <input placeholder="(99) 99999-9999" type="number" name="telefone" class="inputStyle" autocomplete="off" maxlength="11" required/>
+                </div><!--boxInput-->
+
+                <div class="boxInput">
+                    <input type="checkbox" name="feminino" class="inputSexo" id="feminino" required/>
+                    <label for="feminino" class="labelSexo">Feminíno</label>
+                </div><!--boxInput-->
+
+                <div class="boxInput">
+                    <input type="checkbox" name="masculino" class="inputSexo" id="masculino" required/>
+                    <label for="masculino" class="labelSexo">Masculino</label>
+                </div><!--boxInput-->
+
+                <div class="boxInput">
+                    <input type="checkbox" name="outros" class="inputSexo" id="outros" required/>
+                    <label for="outros" class="labelSexo">Outros</label>
+                </div><!--boxInput-->
+
+                <div class="containerDataNascimento">
+                    <label for="data" class="labelData">Data de Nascimento:</label>
+                    <input type="date" name="dataNascimento" name="data" class="inputData" id="data" required>
+                </div><!--containerDataNascimento-->
+
+                <div class="boxInput"> 
+                    <input placeholder="Cidade..." type="text" name="cidade" id="cidade" class="inputStyle" autocomplete="off" required/>
+                </div><!--boxInput-->
+
+                <div class="boxInput">
+                    <input placeholder="Estado..." type="text" name="estado" id="estado" class="inputStyle" autocomplete="off" required/>
+                </div><!--boxInput-->
+
+                <div class="boxInput">
+                    <input placeholder="Endereço..." type="text" name="endereco" id="endereco" class="inputStyle" autocomplete="off" required/>
+                </div><!--boxInput-->
+                <button>Enviar</button>
+            </fieldset>
+        </form>
+    </div><!--containerMain-->
+</body>
+</html>

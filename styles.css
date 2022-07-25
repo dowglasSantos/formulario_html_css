@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #1493dc, #113647);
+}
+
+.containerMain {
+    padding: 15px;
+}
+
+form {
+    color: white;
+    width: 480px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+fieldset {
+    text-align: center;
+    padding: 15px 20px;
+    border: 2px solid dodgerblue;
+    border-radius: 15px;
+}
+
+fieldset > legend {
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    background-color: dodgerblue;
+}
+.boxInput {
+    text-align: left;
+}
+.inputStyle {
+    width: 100%;
+    padding: 0px 5px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #ececec;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 5px;
+    pointer-events: visible;
+}
+.inputStyle{
+    margin-bottom: 25px;
+}
+.inputStyle::placeholder {
+    color: #ccc;
+}
+.inputStyle::-webkit-outer-spin-button,::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+.inputSexo {
+    margin-bottom: 25px;
+}
+.labelSexo {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.containerDataNascimento {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.inputData {
+    height: 30px;
+    padding: 5px;
+    margin-left: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+}
+.labelData {
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    color: white;
+    width: 100%;
+    height: 50px;
+    border: 0;
+    border-radius: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, dodgerblue, #105777);  
+    cursor: pointer; 
+}
+button:hover {
+    box-shadow: 0 0 15px #0f7dbd; 
+}
+
+@media only screen and (max-width: 500px) {
+    .containerMain {
+        width: 95%;
+        padding: 15px 0;
+    }
+    form {
+        width: 100%;
+    }
+    .inputData {
+        display: block;
+        margin: 10px auto 0 auto;
+    }
+}
